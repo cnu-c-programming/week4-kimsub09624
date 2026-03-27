@@ -9,7 +9,7 @@ int main() {
     void* addr_1 = &(arr[i+1]);
     /* 서로 인접한 두 요소의 실제 주소 */
     printf("address of arr[%d]: %p\n", i, addr_0);
-    printf("address of arr[%d+1]: %p\n", i, adddr_1);
+    printf("address of arr[%d+1]: %p\n", i, addr_1);
     /* 서로 인접한 두 요소의 주소 차이 */
     printf("&(arr[%d]) - &(arr[%d+1]) = %d\n", i, i+1, (unsigned long long)addr_1 - (unsigned long long)addr_0);
     printf("\n");
